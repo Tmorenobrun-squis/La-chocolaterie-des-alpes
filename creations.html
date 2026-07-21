@@ -33,6 +33,7 @@
       <a href="histoire.html" class="nav-link">L'Histoire</a>
       <a href="creations.html" class="nav-link" aria-current="page">Nos Créations</a>
       <a href="boutique.html" class="nav-link">La Boutique</a>
+      <a href="boutique.html#contact" class="btn-gold rounded-full px-5 py-2 text-[11px] uppercase tracking-[0.14em] font-medium">Contact</a>
     </div>
 
     <button id="menu-toggle" class="md:hidden text-cream-50 w-11 h-11 flex items-center justify-center" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -47,6 +48,7 @@
   <a href="histoire.html" class="mobile-link text-cream-50 font-serif-display text-3xl tracking-wide">L'Histoire</a>
   <a href="creations.html" class="mobile-link text-gold-400 font-serif-display text-3xl tracking-wide">Nos Créations</a>
   <a href="boutique.html" class="mobile-link text-cream-50 font-serif-display text-3xl tracking-wide">La Boutique</a>
+  <a href="boutique.html#contact" class="mobile-link btn-gold rounded-full px-8 py-3 text-sm uppercase tracking-[0.14em] font-medium">Contact</a>
 </div>
 
 <!-- ============ PAGE BANNER ============ -->
@@ -361,13 +363,22 @@
 <!-- ============ CTA BOUTIQUE ============ -->
 <section class="py-24 md:py-32 bg-cream-50 text-center">
   <div class="max-w-2xl mx-auto px-6" data-reveal>
-    <h2 class="font-serif-display text-3xl md:text-5xl text-chocolate-900 tracking-[-0.03em] mb-8">
+    <h2 class="font-serif-display text-3xl md:text-5xl text-chocolate-900 tracking-[-0.03em] mb-6">
       Nos créations vous attendent en boutique
     </h2>
-    <a href="boutique.html" class="group btn-gold inline-flex items-center gap-2 rounded-full px-9 py-4 uppercase tracking-[0.16em] text-xs md:text-sm font-medium shadow-chocolate">
-      Voir la boutique
-      <svg viewBox="0 0 24 24" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" style="transition-timing-function: var(--ease-spring);" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
+    <p class="text-chocolate-700 leading-[1.75] mb-8">
+      Un coffret d'entreprise ou une création sur mesure pour un événement&nbsp;? Écrivez-nous, nous composons votre commande avec vous.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="boutique.html" class="group btn-gold inline-flex items-center gap-2 rounded-full px-9 py-4 uppercase tracking-[0.16em] text-xs md:text-sm font-medium shadow-chocolate">
+        Voir la boutique
+        <svg viewBox="0 0 24 24" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" style="transition-timing-function: var(--ease-spring);" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="boutique.html#contact" class="group btn-outline-gold inline-flex items-center gap-2 rounded-full px-9 py-4 uppercase tracking-[0.16em] text-xs md:text-sm font-medium text-chocolate-900 border border-gold-600/50">
+        Demander un devis
+        <svg viewBox="0 0 24 24" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" style="transition-timing-function: var(--ease-spring);" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -420,6 +431,11 @@
     </div>
   </div>
 </footer>
+
+<a href="boutique.html#contact" id="floating-contact" class="fixed bottom-6 right-6 z-40 btn-gold rounded-full px-6 py-4 text-xs uppercase tracking-[0.14em] font-medium shadow-chocolate-lg" aria-label="Nous contacter">
+  <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 6l8 7 8-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  Nous contacter
+</a>
 
 <script src="assets/main.js" defer></script>
 </body>

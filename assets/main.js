@@ -69,6 +69,18 @@ if (subnav) {
   categorySections.forEach((section) => spy.observe(section));
 }
 
+// Floating "Nous contacter" shortcut — shown once the visitor has scrolled
+// past the hero/banner, hidden again near the very top.
+const floatingContact = document.getElementById('floating-contact');
+if (floatingContact) {
+  const onScrollFloat = () => {
+    if (window.scrollY > 500) floatingContact.classList.add('is-shown');
+    else floatingContact.classList.remove('is-shown');
+  };
+  document.addEventListener('scroll', onScrollFloat, { passive: true });
+  onScrollFloat();
+}
+
 // Contact form (La Boutique) — not wired to a real destination yet.
 // TODO: connect to an email address or form service before going live.
 const contactForm = document.getElementById('contact-form');

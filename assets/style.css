@@ -412,6 +412,20 @@ a:focus-visible, button:focus-visible {
   }
 }
 
+/* Floating "Nous contacter" shortcut — appears once the visitor has scrolled
+   past the hero, on pages where the contact form itself isn't already on screen. */
+#floating-contact {
+  transition: opacity 0.4s var(--ease-spring), transform 0.4s var(--ease-spring);
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+}
+#floating-contact.is-shown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 ::selection {
   background: #D9A84E;
   color: #1F0F09;
