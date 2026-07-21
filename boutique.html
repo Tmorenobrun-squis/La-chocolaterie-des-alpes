@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Boutique — La Chocolaterie des Alpes</title>
+<meta name="description" content="La Chocolaterie des Alpes vous accueille au 2 Rue Sainte-Claire, en plein cœur de la vieille ville d'Annecy. Adresse, horaires, accès et contact.">
+<link rel="icon" href="assets/favicon-mountain.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Mrs+Saint+Delafield&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-config.js"></script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="bg-cream-50 antialiased">
+
+<!-- ============ NAVIGATION ============ -->
+<header id="site-nav" class="nav-static fixed top-0 inset-x-0 z-50">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4 md:py-5">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="brand_assets/logo-chocolaterie-des-alpes.png" alt="Monogramme AB — La Chocolaterie des Alpes" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-gold-glow transition-transform duration-500 group-hover:rotate-6" style="transition-timing-function: var(--ease-spring);">
+      <span class="hidden sm:block text-cream-50 tracking-[0.18em] text-[11px] md:text-xs uppercase font-medium">
+        La Chocolaterie<br class="hidden md:block"> <span class="md:hidden"> </span>des Alpes
+      </span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-10 text-cream-100 text-sm uppercase tracking-[0.14em]">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="histoire.html" class="nav-link">L'Histoire</a>
+      <a href="creations.html" class="nav-link">Nos Créations</a>
+      <a href="boutique.html" class="nav-link" aria-current="page">La Boutique</a>
+    </div>
+
+    <button id="menu-toggle" class="md:hidden text-cream-50 w-11 h-11 flex items-center justify-center" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile menu overlay -->
+<div id="mobile-menu" data-open="false" class="fixed inset-0 z-40 bg-chocolate-950/95 flex flex-col items-center justify-center gap-10 md:hidden">
+  <a href="index.html" class="mobile-link text-cream-50 font-serif-display text-3xl tracking-wide">Accueil</a>
+  <a href="histoire.html" class="mobile-link text-cream-50 font-serif-display text-3xl tracking-wide">L'Histoire</a>
+  <a href="creations.html" class="mobile-link text-cream-50 font-serif-display text-3xl tracking-wide">Nos Créations</a>
+  <a href="boutique.html" class="mobile-link text-gold-400 font-serif-display text-3xl tracking-wide">La Boutique</a>
+</div>
+
+<!-- ============ PAGE BANNER ============ -->
+<section class="page-banner bg-chocolate-950 text-cream-50 grain">
+  <div class="absolute inset-0" style="background: radial-gradient(80% 60% at 50% 0%, rgba(217,168,78,0.16), transparent 60%);"></div>
+  <svg class="absolute bottom-0 left-0 w-full opacity-20" viewBox="0 0 1440 200" preserveAspectRatio="none" fill="none">
+    <path d="M0 160 L120 90 L220 140 L340 50 L460 130 L560 70 L680 150 L800 40 L920 120 L1040 60 L1180 140 L1300 90 L1440 150 L1440 200 L0 200 Z" fill="#D9A84E" fill-opacity="0.6"/>
+  </svg>
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center" data-stagger>
+    <div class="flex items-center justify-center gap-3 md:gap-6 w-full max-w-xl mx-auto mb-6">
+      <img src="assets/mountain-lineart.svg" alt="" aria-hidden="true" class="mountain-breathe hidden sm:block flex-1 h-14 md:h-20 opacity-85">
+      <span class="medallion-glow flex-shrink-0"><img src="brand_assets/logo-chocolaterie-des-alpes.png" alt="" aria-hidden="true" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-gold-glow"></span>
+      <img src="assets/mountain-lineart.svg" alt="" aria-hidden="true" class="mountain-breathe hidden sm:block flex-1 h-14 md:h-20 opacity-85 scale-x-[-1]">
+    </div>
+    <p class="uppercase tracking-[0.3em] text-gold-300 text-xs mb-6">
+      <a href="index.html" class="hover:text-gold-200 transition-colors">Accueil</a> &middot; La Boutique
+    </p>
+    <h1 class="font-display text-5xl md:text-7xl tracking-[-0.01em] mb-4">La Boutique</h1>
+    <div class="mb-4 text-gold-300/80 flex justify-center" aria-hidden="true">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
+    </div>
+    <p class="font-script text-gold-300 text-2xl md:text-3xl">Au cœur de la vieille ville d'Annecy</p>
+  </div>
+</section>
+
+<!-- ============ INFOS PRATIQUES ============ -->
+<section class="relative py-24 md:py-32 bg-chocolate-950 text-cream-50 overflow-hidden grain">
+  <div class="absolute inset-0" style="background: radial-gradient(80% 60% at 85% 10%, rgba(217,168,78,0.14), transparent 60%);"></div>
+
+  <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+    <div class="grid md:grid-cols-2 gap-14 md:gap-16 items-stretch">
+
+      <div class="flex flex-col justify-between" data-reveal>
+        <div>
+          <div class="flex items-start gap-4 mb-8">
+            <svg class="w-6 h-6 text-gold-400 flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div>
+              <p class="uppercase tracking-[0.2em] text-xs text-gold-400 mb-1">Adresse</p>
+              <p class="text-lg leading-relaxed">2 Rue Sainte-Claire<br>74000 Annecy</p>
+              <p class="text-cream-100/60 text-sm mt-1">En plein cœur de la vieille ville, rue piétonne pavée</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 mb-8">
+            <svg class="w-6 h-6 text-gold-400 flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>
+            <div>
+              <p class="uppercase tracking-[0.2em] text-xs text-gold-400 mb-1">Horaires</p>
+              <p class="text-lg text-cream-100/90 italic">Horaires à confirmer</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 mb-10">
+            <svg class="w-6 h-6 text-gold-400 flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 6l8 7 8-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <p class="uppercase tracking-[0.2em] text-xs text-gold-400 mb-1">Une question, une demande particulière ?</p>
+              <a href="#contact" class="text-lg hover:text-gold-300 transition-colors underline decoration-gold-500/40 underline-offset-4">Écrivez-nous</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://maps.app.goo.gl/qLRCxwt3HQfrwxyCA" target="_blank" rel="noopener noreferrer" class="btn-gold rounded-full px-8 py-4 uppercase tracking-[0.14em] text-xs md:text-sm font-medium shadow-chocolate justify-center">
+            Itinéraire Google Maps
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17L17 7M17 7H9M17 7v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn-outline-gold rounded-full px-8 py-4 uppercase tracking-[0.14em] text-xs md:text-sm font-medium border border-gold-400/50 justify-center flex items-center">
+            Nous contacter
+          </a>
+        </div>
+      </div>
+
+      <div class="relative" data-reveal="scale">
+        <div class="absolute -inset-3 border border-gold-400/30 rounded-sm pointer-events-none z-10"></div>
+        <a href="https://maps.app.goo.gl/qLRCxwt3HQfrwxyCA" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir l'itinéraire vers La Chocolaterie des Alpes sur Google Maps" class="block relative shadow-chocolate-lg rounded-sm overflow-hidden group min-h-[360px] md:min-h-[460px]">
+          <img
+            src="https://placehold.co/900x900/2A150D/D9A84E?text=Carte+%E2%80%94+2+Rue+Sainte-Claire%2C+Annecy"
+            alt="Plan de situation — 2 Rue Sainte-Claire, 74000 Annecy (carte interactive à venir)"
+            class="w-full h-full min-h-[360px] md:min-h-[460px] object-cover transition-transform duration-700"
+            style="transition-timing-function: var(--ease-spring);"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-chocolate-950/70 via-chocolate-950/10 to-transparent"></div>
+          <div class="absolute inset-0 flex flex-col items-center justify-end pb-6 gap-3 group-hover:-translate-y-1 transition-transform duration-500" style="transition-timing-function: var(--ease-spring);">
+            <svg viewBox="0 0 24 24" class="w-8 h-8 text-gold-300 drop-shadow" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span class="btn-gold rounded-full px-6 py-3 text-[11px] uppercase tracking-[0.14em] font-medium shadow-chocolate">
+              Ouvrir dans Google Maps
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAÇADE ============ -->
+<section class="py-24 md:py-32 bg-cream-50">
+  <div class="max-w-5xl mx-auto px-6 md:px-10 text-center" data-reveal>
+    <p class="uppercase tracking-[0.35em] text-gold-700 text-xs md:text-sm mb-4">Rue Sainte-Claire</p>
+    <svg class="w-5 h-5 text-gold-600/80 mb-4 mx-auto" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
+    <h2 class="font-serif-display text-3xl md:text-5xl text-chocolate-900 tracking-[-0.03em] mb-10">
+      Une devanture au cœur des ruelles pavées
+    </h2>
+  </div>
+  <div class="max-w-4xl mx-auto px-6" data-reveal="scale">
+    <div class="product-media shadow-chocolate-lg rounded-sm">
+      <img src="brand_assets/photo-devanture-jour.jpg" alt="Devanture de La Chocolaterie des Alpes, 2 Rue Sainte-Claire" class="w-full h-full object-cover aspect-video">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<!-- Formulaire non connecté : à relier à une adresse email ou un service d'envoi avant mise en ligne. -->
+<section id="contact" class="py-24 md:py-32 bg-chocolate-900 text-cream-50 scroll-mt-24">
+  <div class="max-w-3xl mx-auto px-6 md:px-10">
+    <div class="text-center mb-14" data-reveal>
+      <p class="uppercase tracking-[0.35em] text-gold-400 text-xs md:text-sm mb-4">Une question, une commande spéciale</p>
+      <svg class="w-5 h-5 text-gold-400/80 mb-4 mx-auto" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
+      <h2 class="font-serif-display text-4xl md:text-5xl tracking-[-0.03em] mb-5">Nous contacter</h2>
+      <p class="text-cream-100/80 leading-[1.75]">
+        Coffret sur mesure, demande professionnelle ou simple question — écrivez-nous, nous vous répondrons rapidement.
+      </p>
+    </div>
+
+    <form id="contact-form" class="grid sm:grid-cols-2 gap-6" data-reveal>
+      <div class="sm:col-span-1">
+        <label for="contact-name" class="block uppercase tracking-[0.16em] text-xs text-gold-400 mb-2">Nom</label>
+        <input type="text" id="contact-name" name="name" required autocomplete="name" class="w-full bg-transparent border border-cream-100/25 rounded-sm px-4 py-3 text-cream-50 placeholder:text-cream-100/40 focus:outline-none focus:border-gold-400 transition-colors" placeholder="Votre nom">
+      </div>
+      <div class="sm:col-span-1">
+        <label for="contact-email" class="block uppercase tracking-[0.16em] text-xs text-gold-400 mb-2">Email</label>
+        <input type="email" id="contact-email" name="email" required autocomplete="email" class="w-full bg-transparent border border-cream-100/25 rounded-sm px-4 py-3 text-cream-50 placeholder:text-cream-100/40 focus:outline-none focus:border-gold-400 transition-colors" placeholder="vous@exemple.com">
+      </div>
+      <div class="sm:col-span-2">
+        <label for="contact-message" class="block uppercase tracking-[0.16em] text-xs text-gold-400 mb-2">Message</label>
+        <textarea id="contact-message" name="message" required rows="5" class="w-full bg-transparent border border-cream-100/25 rounded-sm px-4 py-3 text-cream-50 placeholder:text-cream-100/40 focus:outline-none focus:border-gold-400 transition-colors resize-none" placeholder="Votre message"></textarea>
+      </div>
+      <div class="sm:col-span-2 flex items-center justify-between flex-wrap gap-4">
+        <p id="contact-status" class="text-sm text-cream-100/60" role="status" aria-live="polite"></p>
+        <button type="submit" class="btn-gold rounded-full px-9 py-4 uppercase tracking-[0.16em] text-xs md:text-sm font-medium shadow-chocolate">
+          Envoyer le message
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="py-24 md:py-32 bg-cream-50 text-center">
+  <div class="max-w-2xl mx-auto px-6" data-reveal>
+    <h2 class="font-serif-display text-3xl md:text-5xl text-chocolate-900 tracking-[-0.03em] mb-8">
+      Avant votre visite, découvrez nos créations
+    </h2>
+    <a href="creations.html" class="group btn-gold inline-flex items-center gap-2 rounded-full px-9 py-4 uppercase tracking-[0.16em] text-xs md:text-sm font-medium shadow-chocolate">
+      Voir nos créations
+      <svg viewBox="0 0 24 24" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" style="transition-timing-function: var(--ease-spring);" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-chocolate-950 text-cream-100 pt-20 pb-10 border-t border-gold-400/10">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <div class="grid md:grid-cols-3 gap-12 md:gap-10 mb-14">
+
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <img src="brand_assets/logo-chocolaterie-des-alpes.png" alt="Monogramme AB — La Chocolaterie des Alpes" class="w-11 h-11 rounded-full shadow-gold-glow">
+          <span class="uppercase tracking-[0.16em] text-sm">La Chocolaterie<br>des Alpes</span>
+        </div>
+        <p class="text-cream-100/60 text-sm leading-relaxed max-w-xs">
+          Chocolatier-confiseur artisanal, façonné à la main au cœur de la vieille ville d'Annecy.
+        </p>
+      </div>
+
+      <div>
+        <p class="uppercase tracking-[0.2em] text-xs text-gold-400 mb-5">Navigation</p>
+        <ul class="space-y-3 text-cream-100/80 text-sm">
+          <li><a href="histoire.html" class="hover:text-gold-300 transition-colors">L'Histoire de la Maison</a></li>
+          <li><a href="creations.html" class="hover:text-gold-300 transition-colors">Nos Créations</a></li>
+          <li><a href="boutique.html" class="hover:text-gold-300 transition-colors">La Boutique</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="uppercase tracking-[0.2em] text-xs text-gold-400 mb-5">Nous trouver</p>
+        <ul class="space-y-3 text-cream-100/80 text-sm">
+          <li>2 Rue Sainte-Claire, 74000 Annecy</li>
+          <li>
+            <a href="https://maps.app.goo.gl/qLRCxwt3HQfrwxyCA" target="_blank" rel="noopener noreferrer" class="hover:text-gold-300 transition-colors inline-flex items-center gap-2">
+              Voir sur Google Maps
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/chocolaterie.desalpes" target="_blank" rel="noopener noreferrer" class="hover:text-gold-300 transition-colors inline-flex items-center gap-2">
+              <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.8" fill="currentColor" stroke="none"/></svg>
+              @chocolaterie.desalpes
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-gold-400/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream-100/50 uppercase tracking-wide">
+      <p>&copy; 2026 La Chocolaterie des Alpes — Tous droits réservés</p>
+      <p>2 Rue Sainte-Claire, Vieille Ville d'Annecy</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

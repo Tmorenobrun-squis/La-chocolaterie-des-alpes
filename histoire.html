@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Histoire de la Maison — La Chocolaterie des Alpes</title>
+<meta name="description" content="Découvrez l'histoire et le savoir-faire artisanal de La Chocolaterie des Alpes, chocolatier-confiseur au cœur de la vieille ville d'Annecy.">
+<link rel="icon" href="assets/favicon-mountain.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Mrs+Saint+Delafield&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-config.js"></script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="bg-cream-50 antialiased">
+
+<!-- ============ NAVIGATION ============ -->
+<header id="site-nav" class="nav-static fixed top-0 inset-x-0 z-50">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4 md:py-5">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="brand_assets/logo-chocolaterie-des-alpes.png" alt="Monogramme AB — La Chocolaterie des Alpes" class="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-gold-glow transition-transform duration-500 group-hover:rotate-6" style="transition-timing-function: var(--ease-spring);">
+      <span class="hidden sm:block text-cream-50 tracking-[0.18em] text-[11px] md:text-xs uppercase font-medium">
+        La Chocolaterie<br class="hidden md:block"> <span class="md:hidden"> </span>des Alpes
+      </span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-10 text-cream-100 text-sm uppercase tracking-[0.14em]">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="histoire.html" class="nav-link" aria-current="page">L'Histoire</a>
+      <a href="creations.html" class="nav-link">Nos Créations</a>
+      <a href="boutique.html" class="nav-link">La Boutique</a>
+    </div>
+
+    <button id="menu-toggle" class="md:hidden text-cream-50 w-11 h-11 flex items-center justify-center" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile menu overlay -->
+<div id="mobile-menu" data-open="false" class="fixed inset-0 z-40 bg-chocolate-950/95 flex flex-col items-center justify-center gap-10 md:hidden">
+  <a href="index.html" class="mobile-link text-cream-50 font-serif-display text-3xl tracking-wide">Accueil</a>
+  <a href="histoire.html" class="mobile-link text-gold-400 font-serif-display text-3xl tracking-wide">L'Histoire</a>
+  <a href="creations.html" class="mobile-link text-cream-50 font-serif-display text-3xl tracking-wide">Nos Créations</a>
+  <a href="boutique.html" class="mobile-link text-cream-50 font-serif-display text-3xl tracking-wide">La Boutique</a>
+</div>
+
+<!-- ============ PAGE BANNER ============ -->
+<section class="page-banner bg-chocolate-950 text-cream-50 grain">
+  <div class="absolute inset-0" style="background: radial-gradient(80% 60% at 50% 0%, rgba(217,168,78,0.16), transparent 60%);"></div>
+  <svg class="absolute bottom-0 left-0 w-full opacity-20" viewBox="0 0 1440 200" preserveAspectRatio="none" fill="none">
+    <path d="M0 160 L120 90 L220 140 L340 50 L460 130 L560 70 L680 150 L800 40 L920 120 L1040 60 L1180 140 L1300 90 L1440 150 L1440 200 L0 200 Z" fill="#D9A84E" fill-opacity="0.6"/>
+  </svg>
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center" data-stagger>
+    <div class="flex items-center justify-center gap-3 md:gap-6 w-full max-w-xl mx-auto mb-6">
+      <img src="assets/mountain-lineart.svg" alt="" aria-hidden="true" class="mountain-breathe hidden sm:block flex-1 h-14 md:h-20 opacity-85">
+      <span class="medallion-glow flex-shrink-0"><img src="brand_assets/logo-chocolaterie-des-alpes.png" alt="" aria-hidden="true" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-gold-glow"></span>
+      <img src="assets/mountain-lineart.svg" alt="" aria-hidden="true" class="mountain-breathe hidden sm:block flex-1 h-14 md:h-20 opacity-85 scale-x-[-1]">
+    </div>
+    <p class="uppercase tracking-[0.3em] text-gold-300 text-xs mb-6">
+      <a href="index.html" class="hover:text-gold-200 transition-colors">Accueil</a> &middot; L'Histoire de la Maison
+    </p>
+    <h1 class="font-display text-5xl md:text-7xl tracking-[-0.01em] mb-4">L'Histoire de la Maison</h1>
+    <div class="mb-4 text-gold-300/80 flex justify-center" aria-hidden="true">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
+    </div>
+    <p class="font-script text-gold-300 text-2xl md:text-3xl">Un artisanat de montagne, façonné avec patience</p>
+  </div>
+</section>
+
+<!-- ============ INTRODUCTION ============ -->
+<section class="py-24 md:py-32 bg-cream-50">
+  <div class="max-w-4xl mx-auto px-6 md:px-10 text-center" data-reveal>
+    <p class="text-chocolate-700 leading-[1.8] text-lg md:text-xl">
+      Au cœur de la vieille ville d'Annecy, entre ruelles pavées et canaux, La Chocolaterie des Alpes est née d'une conviction simple&nbsp;: le chocolat mérite d'être traité comme un savoir-faire alpin d'exception, avec la même exigence que l'on porte à l'affinage d'un fromage de montagne ou à la distillation d'une plante d'altitude. Chaque création prend le temps qu'il faut — jamais moins.
+    </p>
+  </div>
+</section>
+
+<!-- ============ NOTRE PHILOSOPHIE ============ -->
+<section class="relative py-24 md:py-32 bg-chocolate-900 text-cream-50 overflow-hidden grain">
+  <svg class="absolute top-0 left-0 w-full opacity-15" viewBox="0 0 1440 200" preserveAspectRatio="none" fill="none">
+    <path d="M0 160 L120 90 L220 140 L340 50 L460 130 L560 70 L680 150 L800 40 L920 120 L1040 60 L1180 140 L1300 90 L1440 150 L1440 200 L0 200 Z" fill="#D9A84E"/>
+  </svg>
+  <div class="max-w-6xl mx-auto px-6 md:px-10 relative z-10">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+      <p class="uppercase tracking-[0.35em] text-gold-400 text-xs md:text-sm mb-4">Notre philosophie</p>
+      <svg class="w-5 h-5 text-gold-400/80 mb-4 mx-auto" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
+      <h2 class="font-serif-display text-4xl md:text-5xl tracking-[-0.03em]">Trois principes, une exigence</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10 md:gap-8" data-stagger>
+      <div class="text-center px-4">
+        <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-gold-400/50 flex items-center justify-center">
+          <svg class="w-7 h-7 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20l6-16 2 6 2-6 6 16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="font-serif-display text-2xl mb-3">Terroir alpin</h3>
+        <p class="text-cream-100/80 leading-[1.75] text-sm">
+          Noisettes des Bauges, plantes de montagne, crème d'alpage&nbsp;: nos recettes puisent dans les richesses des sommets qui entourent Annecy.
+        </p>
+      </div>
+      <div class="text-center px-4">
+        <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-gold-400/50 flex items-center justify-center">
+          <svg class="w-7 h-7 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 21c0-4 2.5-6 5-9s5-5 5-9M7 21c0-3-1.5-5-3-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="font-serif-display text-2xl mb-3">Savoir-faire transmis</h3>
+        <p class="text-cream-100/80 leading-[1.75] text-sm">
+          Chaque geste s'apprend, se répète et s'affine — comme on transmet un savoir-faire de génération en génération.
+        </p>
+      </div>
+      <div class="text-center px-4">
+        <div class="w-16 h-16 mx-auto mb-6 rounded-full border border-gold-400/50 flex items-center justify-center">
+          <svg class="w-7 h-7 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <h3 class="font-serif-display text-2xl mb-3">Fait main à Annecy</h3>
+        <p class="text-cream-100/80 leading-[1.75] text-sm">
+          Toutes nos pièces sont façonnées à la main, en petites séries, dans notre atelier de la vieille ville.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOTRE SAVOIR-FAIRE — ÉTAPES ============ -->
+<section class="py-24 md:py-32 bg-cream-50">
+  <div class="max-w-6xl mx-auto px-6 md:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-20" data-reveal>
+      <p class="uppercase tracking-[0.35em] text-gold-700 text-xs md:text-sm mb-4">De la matière première à la création</p>
+      <svg class="w-5 h-5 text-gold-600/80 mb-4 mx-auto" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
+      <h2 class="font-serif-display text-4xl md:text-5xl text-chocolate-900 tracking-[-0.03em]">Notre savoir-faire, étape par étape</h2>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-10 md:gap-8" data-stagger>
+      <div>
+        <p class="step-number text-6xl text-gold-300 mb-4">01</p>
+        <h3 class="font-serif-display text-2xl text-chocolate-900 mb-3">Sélection</h3>
+        <p class="text-chocolate-700 leading-[1.7] text-sm">
+          Fèves de cacao rigoureusement choisies, noisettes des Bauges et plantes de montagne récoltées localement.
+        </p>
+      </div>
+      <div>
+        <p class="step-number text-6xl text-gold-300 mb-4">02</p>
+        <h3 class="font-serif-display text-2xl text-chocolate-900 mb-3">Travail du chocolat</h3>
+        <p class="text-chocolate-700 leading-[1.7] text-sm">
+          Fonte, tempérage et conchage lents, pour révéler la texture et les arômes propres à chaque origine.
+        </p>
+      </div>
+      <div>
+        <p class="step-number text-6xl text-gold-300 mb-4">03</p>
+        <h3 class="font-serif-display text-2xl text-chocolate-900 mb-3">Façonnage à la main</h3>
+        <p class="text-chocolate-700 leading-[1.7] text-sm">
+          Chaque ganache, praline et tablette est façonnée pièce par pièce, en petites séries, dans notre atelier.
+        </p>
+      </div>
+      <div>
+        <p class="step-number text-6xl text-gold-300 mb-4">04</p>
+        <h3 class="font-serif-display text-2xl text-chocolate-900 mb-3">Finition</h3>
+        <p class="text-chocolate-700 leading-[1.7] text-sm">
+          Feuille d'or comestible, sel de fleur de montagne ou éclats de noisette&nbsp;: la touche finale de chaque création.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉDAILLON — ARTISAN AU TRAVAIL ============ -->
+<section class="relative py-24 md:py-32 bg-chocolate-950 text-cream-50 overflow-hidden grain">
+  <div class="absolute inset-0" style="background: radial-gradient(70% 60% at 20% 20%, rgba(217,168,78,0.14), transparent 60%);"></div>
+  <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-14 md:gap-20 items-center relative z-10">
+    <div class="relative order-2 md:order-1" data-reveal="scale">
+      <div class="absolute -inset-4 border border-gold-400/30 rounded-sm pointer-events-none"></div>
+      <div class="product-media shadow-chocolate-lg rounded-sm">
+        <img src="brand_assets/photo-interieur-arches.jpg" alt="Intérieur de l'atelier-boutique La Chocolaterie des Alpes, présentoirs voûtés" class="w-full h-full object-cover aspect-[4/5]">
+      </div>
+      <div class="absolute -bottom-8 -right-6 md:-right-10 w-32 h-32 md:w-36 md:h-36 rounded-full bg-cream-50 border-2 border-gold-500 shadow-chocolate flex items-center justify-center p-4">
+        <svg viewBox="0 0 100 100" class="w-full h-full">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#B8792C" stroke-width="1"/>
+          <circle cx="50" cy="50" r="40" fill="none" stroke="#B8792C" stroke-width="0.6"/>
+          <path id="atelierarc-top" d="M 10,53 A 40,40 0 0 1 90,53" fill="none"/>
+          <text font-size="6.4" fill="#3B1D12" letter-spacing="1.6" font-family="Cormorant Garamond, serif" text-anchor="middle">
+            <textPath href="#atelierarc-top" startOffset="50%">ATELIER ARTISANAL</textPath>
+          </text>
+          <path d="M50 33c-4 6-10 9-10 17a10 10 0 0 0 20 0c0-8-6-11-10-17z" fill="none" stroke="#B8792C" stroke-width="1.4"/>
+          <circle cx="45" cy="48" r="1.5" fill="#B8792C"/>
+          <circle cx="55" cy="48" r="1.5" fill="#B8792C"/>
+          <circle cx="50" cy="53" r="1.5" fill="#B8792C"/>
+          <circle cx="46" cy="57" r="1.5" fill="#B8792C"/>
+          <circle cx="54" cy="57" r="1.5" fill="#B8792C"/>
+          <text x="50" y="72" font-size="5.4" fill="#9C6321" letter-spacing="2" font-family="Cormorant Garamond, serif" text-anchor="middle">ANNECY</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="order-1 md:order-2" data-reveal>
+      <p class="uppercase tracking-[0.35em] text-gold-400 text-xs md:text-sm mb-4">Dans l'atelier</p>
+      <svg class="w-5 h-5 text-gold-400/80 mb-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
+      <h2 class="font-serif-display text-4xl md:text-5xl tracking-[-0.03em] mb-6 leading-[1.05]">
+        Une main sûre, un geste répété
+      </h2>
+      <p class="text-cream-100/90 leading-[1.75] text-base md:text-lg mb-6 max-w-xl">
+        Derrière chaque vitrine, un artisan façonne, trempe et finit chaque pièce à la main. Aucune chaîne, aucune série industrielle&nbsp;: seulement le rythme d'un atelier de la vieille ville, où le temps long reste le meilleur ingrédient.
+      </p>
+      <p class="text-cream-100/90 leading-[1.75] text-base md:text-lg max-w-xl">
+        C'est ce soin porté à chaque détail — la brillance d'un enrobage, la netteté d'un décor à la feuille d'or — qui distingue une création façonnée à la main d'une confiserie produite en série.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CITATIONS ============ -->
+<section class="relative py-20 md:py-28 bg-cream-100 border-y border-gold-400/25">
+  <div class="max-w-5xl mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-12 md:gap-16">
+    <figure class="text-center md:text-left" data-reveal>
+      <span class="font-script text-6xl text-gold-500/60 block leading-none mb-2">“</span>
+      <blockquote class="font-serif-display italic text-xl md:text-2xl text-chocolate-800 leading-snug mb-4">
+        On sent la patience derrière chaque création — un artisanat rare, loin de la production de masse.
+      </blockquote>
+      <figcaption class="uppercase tracking-[0.2em] text-xs text-chocolate-600">— Clientèle de la vieille ville d'Annecy</figcaption>
+    </figure>
+    <figure class="text-center md:text-left" data-reveal>
+      <span class="font-script text-6xl text-gold-500/60 block leading-none mb-2">“</span>
+      <blockquote class="font-serif-display italic text-xl md:text-2xl text-chocolate-800 leading-snug mb-4">
+        Une maison qui raconte vraiment les Alpes, jusque dans le choix de ses ingrédients.
+      </blockquote>
+      <figcaption class="uppercase tracking-[0.2em] text-xs text-chocolate-600">— Amateurs de chocolat, Haute-Savoie</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="py-24 md:py-32 bg-cream-50 text-center">
+  <div class="max-w-2xl mx-auto px-6" data-reveal>
+    <h2 class="font-serif-display text-3xl md:text-5xl text-chocolate-900 tracking-[-0.03em] mb-8">
+      Découvrir le fruit de ce savoir-faire
+    </h2>
+    <a href="creations.html" class="group btn-gold inline-flex items-center gap-2 rounded-full px-9 py-4 uppercase tracking-[0.16em] text-xs md:text-sm font-medium shadow-chocolate">
+      Voir nos créations
+      <svg viewBox="0 0 24 24" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" style="transition-timing-function: var(--ease-spring);" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-chocolate-950 text-cream-100 pt-20 pb-10 border-t border-gold-400/10">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <div class="grid md:grid-cols-3 gap-12 md:gap-10 mb-14">
+
+      <div>
+        <div class="flex items-center gap-3 mb-5">
+          <img src="brand_assets/logo-chocolaterie-des-alpes.png" alt="Monogramme AB — La Chocolaterie des Alpes" class="w-11 h-11 rounded-full shadow-gold-glow">
+          <span class="uppercase tracking-[0.16em] text-sm">La Chocolaterie<br>des Alpes</span>
+        </div>
+        <p class="text-cream-100/60 text-sm leading-relaxed max-w-xs">
+          Chocolatier-confiseur artisanal, façonné à la main au cœur de la vieille ville d'Annecy.
+        </p>
+      </div>
+
+      <div>
+        <p class="uppercase tracking-[0.2em] text-xs text-gold-400 mb-5">Navigation</p>
+        <ul class="space-y-3 text-cream-100/80 text-sm">
+          <li><a href="histoire.html" class="hover:text-gold-300 transition-colors">L'Histoire de la Maison</a></li>
+          <li><a href="creations.html" class="hover:text-gold-300 transition-colors">Nos Créations</a></li>
+          <li><a href="boutique.html" class="hover:text-gold-300 transition-colors">La Boutique</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="uppercase tracking-[0.2em] text-xs text-gold-400 mb-5">Nous trouver</p>
+        <ul class="space-y-3 text-cream-100/80 text-sm">
+          <li>2 Rue Sainte-Claire, 74000 Annecy</li>
+          <li>
+            <a href="https://maps.app.goo.gl/qLRCxwt3HQfrwxyCA" target="_blank" rel="noopener noreferrer" class="hover:text-gold-300 transition-colors inline-flex items-center gap-2">
+              Voir sur Google Maps
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/chocolaterie.desalpes" target="_blank" rel="noopener noreferrer" class="hover:text-gold-300 transition-colors inline-flex items-center gap-2">
+              <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.8" fill="currentColor" stroke="none"/></svg>
+              @chocolaterie.desalpes
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-8 border-t border-gold-400/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream-100/50 uppercase tracking-wide">
+      <p>&copy; 2026 La Chocolaterie des Alpes — Tous droits réservés</p>
+      <p>2 Rue Sainte-Claire, Vieille Ville d'Annecy</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
