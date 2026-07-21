@@ -160,53 +160,105 @@
 
 <!-- ============ CONTACT ============ -->
 <!-- Formulaire non connecté : à relier à une adresse email ou un service d'envoi avant mise en ligne. -->
-<section id="contact" class="py-24 md:py-32 bg-chocolate-900 text-cream-50 scroll-mt-24">
-  <div class="max-w-3xl mx-auto px-6 md:px-10">
-    <div class="text-center mb-10" data-reveal>
-      <p class="uppercase tracking-[0.35em] text-gold-400 text-xs md:text-sm mb-4">Un projet, une envie particulière</p>
-      <svg class="w-5 h-5 text-gold-400/80 mb-4 mx-auto" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
-      <h2 class="font-serif-display text-4xl md:text-5xl tracking-[-0.03em] mb-5">Parlons de votre commande</h2>
-      <p class="text-cream-100/80 leading-[1.75] max-w-xl mx-auto">
-        Coffret d'entreprise, création personnalisée pour un événement, ou simple question — écrivez-nous&nbsp;: chaque demande est étudiée avec le même soin qu'une commande en boutique.
-      </p>
-    </div>
+<section id="contact" class="relative py-24 md:py-32 overflow-hidden bg-cream-100 grain scroll-mt-24">
+  <div class="absolute inset-0" style="background: radial-gradient(55% 50% at 12% 8%, rgba(217,168,78,0.16), transparent 60%), radial-gradient(50% 45% at 92% 95%, rgba(184,121,44,0.14), transparent 60%);"></div>
+  <img src="assets/mountain-lineart.svg" alt="" aria-hidden="true" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl opacity-[0.07] pointer-events-none">
 
-    <div class="grid grid-cols-3 gap-4 md:gap-8 mb-12 text-center" data-stagger>
-      <div>
-        <svg class="w-6 h-6 text-gold-400 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>
-        <p class="text-[11px] md:text-xs uppercase tracking-wide text-cream-100/80">Réponse sous 24h</p>
-      </div>
-      <div>
-        <svg class="w-6 h-6 text-gold-400 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        <p class="text-[11px] md:text-xs uppercase tracking-wide text-cream-100/80">Fait main à Annecy</p>
-      </div>
-      <div>
-        <svg class="w-6 h-6 text-gold-400 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7L9 18l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <p class="text-[11px] md:text-xs uppercase tracking-wide text-cream-100/80">Devis sur mesure</p>
-      </div>
-    </div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6 md:px-10">
+    <div class="grid lg:grid-cols-5 gap-12 lg:gap-14 items-start">
 
-    <form id="contact-form" class="grid sm:grid-cols-2 gap-6" data-reveal>
-      <div class="sm:col-span-1">
-        <label for="contact-name" class="block uppercase tracking-[0.16em] text-xs text-gold-400 mb-2">Nom</label>
-        <input type="text" id="contact-name" name="name" required autocomplete="name" class="w-full bg-transparent border border-cream-100/25 rounded-sm px-4 py-3 text-cream-50 placeholder:text-cream-100/40 focus:outline-none focus:border-gold-400 transition-colors" placeholder="Votre nom">
+      <!-- Pitch column -->
+      <div class="lg:col-span-2 lg:pt-4" data-reveal>
+        <p class="uppercase tracking-[0.35em] text-gold-700 text-xs md:text-sm mb-4">Un projet, une envie particulière</p>
+        <svg class="w-5 h-5 text-gold-600/80 mb-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2,18 L8,6 L12,12 L16,9 L22,18 Z"/></svg>
+        <h2 class="font-serif-display text-4xl md:text-5xl text-chocolate-900 tracking-[-0.03em] mb-6 leading-[1.05]">Parlons de votre commande</h2>
+        <p class="text-chocolate-700 leading-[1.75] mb-10">
+          Coffret d'entreprise, pièce pour un mariage, création sur mesure&nbsp;: chaque demande est étudiée avec le même soin qu'une commande passée en boutique — et donne lieu à une proposition écrite, pensée pour vous.
+        </p>
+        <ul class="space-y-6">
+          <li class="flex gap-4">
+            <svg class="w-5 h-5 text-gold-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>
+            <div>
+              <p class="font-medium text-chocolate-900 mb-0.5">Réponse sous 24h</p>
+              <p class="text-chocolate-600 text-sm leading-relaxed">Un premier retour rapide — jamais un silence.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <svg class="w-5 h-5 text-gold-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7L9 18l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <p class="font-medium text-chocolate-900 mb-0.5">Devis gratuit, sans engagement</p>
+              <p class="text-chocolate-600 text-sm leading-relaxed">Une proposition détaillée, à vous de décider ensuite.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <svg class="w-5 h-5 text-gold-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div>
+              <p class="font-medium text-chocolate-900 mb-0.5">Fait main à Annecy</p>
+              <p class="text-chocolate-600 text-sm leading-relaxed">Chaque pièce façonnée dans notre atelier de la vieille ville.</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="sm:col-span-1">
-        <label for="contact-email" class="block uppercase tracking-[0.16em] text-xs text-gold-400 mb-2">Email</label>
-        <input type="email" id="contact-email" name="email" required autocomplete="email" class="w-full bg-transparent border border-cream-100/25 rounded-sm px-4 py-3 text-cream-50 placeholder:text-cream-100/40 focus:outline-none focus:border-gold-400 transition-colors" placeholder="vous@exemple.com">
+
+      <!-- Form card — elevated with a border + layered shadow, not a flat panel -->
+      <div class="lg:col-span-3 bg-cream-50 rounded-lg shadow-chocolate-lg border border-gold-400/25 p-7 md:p-10" data-reveal="scale">
+        <form id="contact-form">
+          <p class="uppercase tracking-[0.2em] text-xs text-gold-700 mb-3">Votre projet concerne</p>
+          <div class="flex flex-wrap gap-2.5 mb-7">
+            <label class="request-pill">
+              <input type="radio" name="request-type" value="entreprise" checked>
+              <span>Coffret d'entreprise</span>
+            </label>
+            <label class="request-pill">
+              <input type="radio" name="request-type" value="evenement">
+              <span>Événement &middot; Mariage</span>
+            </label>
+            <label class="request-pill">
+              <input type="radio" name="request-type" value="sur-mesure">
+              <span>Création sur mesure</span>
+            </label>
+            <label class="request-pill">
+              <input type="radio" name="request-type" value="question">
+              <span>Question générale</span>
+            </label>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label for="contact-name" class="block uppercase tracking-[0.16em] text-xs text-gold-700 mb-2">Nom</label>
+              <input type="text" id="contact-name" name="name" required autocomplete="name" class="form-input" placeholder="Votre nom">
+            </div>
+            <div>
+              <label for="contact-email" class="block uppercase tracking-[0.16em] text-xs text-gold-700 mb-2">Email</label>
+              <input type="email" id="contact-email" name="email" required autocomplete="email" class="form-input" placeholder="vous@exemple.com">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label for="contact-quantity" class="block uppercase tracking-[0.16em] text-xs text-gold-700 mb-2">Quantité approximative</label>
+              <input type="text" id="contact-quantity" name="quantity" class="form-input" placeholder="Ex. 50 coffrets">
+            </div>
+            <div>
+              <label for="contact-date" class="block uppercase tracking-[0.16em] text-xs text-gold-700 mb-2">Date souhaitée</label>
+              <input type="date" id="contact-date" name="date" class="form-input">
+            </div>
+          </div>
+
+          <div class="mb-7">
+            <label for="contact-message" class="block uppercase tracking-[0.16em] text-xs text-gold-700 mb-2">Détaillez votre projet</label>
+            <textarea id="contact-message" name="message" required rows="4" class="form-input resize-none" placeholder="Occasion, nombre de personnes, budget indicatif, préférences de saveurs…"></textarea>
+          </div>
+
+          <button type="submit" class="group btn-gold w-full sm:w-auto justify-center rounded-full px-9 py-4 uppercase tracking-[0.16em] text-xs md:text-sm font-medium shadow-chocolate">
+            Recevoir ma proposition personnalisée
+            <svg viewBox="0 0 24 24" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" style="transition-timing-function: var(--ease-spring);" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p id="contact-status" class="text-xs text-chocolate-600/80 mt-4" role="status" aria-live="polite">Réponse personnalisée sous 24h, sans engagement.</p>
+        </form>
       </div>
-      <div class="sm:col-span-2">
-        <label for="contact-message" class="block uppercase tracking-[0.16em] text-xs text-gold-400 mb-2">Message</label>
-        <textarea id="contact-message" name="message" required rows="5" class="w-full bg-transparent border border-cream-100/25 rounded-sm px-4 py-3 text-cream-50 placeholder:text-cream-100/40 focus:outline-none focus:border-gold-400 transition-colors resize-none" placeholder="Votre message"></textarea>
-      </div>
-      <div class="sm:col-span-2 flex items-center justify-between flex-wrap gap-4">
-        <p id="contact-status" class="text-sm text-cream-100/60" role="status" aria-live="polite"></p>
-        <button type="submit" class="group btn-gold rounded-full px-9 py-4 uppercase tracking-[0.16em] text-xs md:text-sm font-medium shadow-chocolate">
-          Envoyer le message
-          <svg viewBox="0 0 24 24" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" style="transition-timing-function: var(--ease-spring);" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </div>
-    </form>
+
+    </div>
   </div>
 </section>
 
